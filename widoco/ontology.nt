@@ -1,0 +1,1629 @@
+<http://www.ontology.audit4sg.org/RelAIEO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.ontology.audit4sg.org/RelAIEO> <http://purl.org/dc/elements/1.1/creator> "Cheshta Arora" .
+<http://www.ontology.audit4sg.org/RelAIEO> <http://purl.org/dc/elements/1.1/creator> "Debarun Sarkar" .
+<http://www.ontology.audit4sg.org/RelAIEO> <http://purl.org/dc/elements/1.1/license> "GNU General Purpose License v3" .
+<http://www.ontology.audit4sg.org/RelAIEO> <http://purl.org/dc/elements/1.1/title> "Relational AI Ethics Ontology (RelAIEO)" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ateontology.protect.linkeddata.es/def/ateo#studyOf
+<http://ateontology.protect.linkeddata.es/def/ateo#studyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ateontology.protect.linkeddata.es/def/ateo#studyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ateontology.protect.linkeddata.es/def/ateo#approach> .
+<http://ateontology.protect.linkeddata.es/def/ateo#studyOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#ai_system> .
+<http://ateontology.protect.linkeddata.es/def/ateo#studyOf> <http://www.w3.org/2000/01/rdf-schema#label> "ToAudit" .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#Ask
+<http://www.ontology.audit4sg.org/RelAIEO#Ask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#Ask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#relational_approach> .
+<http://www.ontology.audit4sg.org/RelAIEO#Ask> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#question> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#BasedOn
+<http://www.ontology.audit4sg.org/RelAIEO#BasedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#BasedOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#BasedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ateontology.protect.linkeddata.es/def/ateo#ethical_assessment> .
+<http://www.ontology.audit4sg.org/RelAIEO#BasedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#CriticalOf
+<http://www.ontology.audit4sg.org/RelAIEO#CriticalOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#CriticalOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#relational_ethic> .
+<http://www.ontology.audit4sg.org/RelAIEO#CriticalOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#CutAcross
+<http://www.ontology.audit4sg.org/RelAIEO#CutAcross> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#CutAcross> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#consumer> .
+<http://www.ontology.audit4sg.org/RelAIEO#CutAcross> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#equality_end_user> .
+<http://www.ontology.audit4sg.org/RelAIEO#CutAcross> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#domain> .
+<http://www.ontology.audit4sg.org/RelAIEO#CutAcross> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ExperimentWith
+<http://www.ontology.audit4sg.org/RelAIEO#ExperimentWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#ExperimentWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#ExperimentWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#relational_approach> .
+<http://www.ontology.audit4sg.org/RelAIEO#ExperimentWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#method> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#FocusOn
+<http://www.ontology.audit4sg.org/RelAIEO#FocusOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#FocusOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#relational_approach> .
+<http://www.ontology.audit4sg.org/RelAIEO#FocusOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#matter_of_concern> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#GiveFunding
+<http://www.ontology.audit4sg.org/RelAIEO#GiveFunding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#GiveFunding> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#funder> .
+<http://www.ontology.audit4sg.org/RelAIEO#GiveFunding> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#Has
+<http://www.ontology.audit4sg.org/RelAIEO#Has> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#Has> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#ai_system> .
+<http://www.ontology.audit4sg.org/RelAIEO#Has> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#design> .
+<http://www.ontology.audit4sg.org/RelAIEO#Has> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#consequence> .
+<http://www.ontology.audit4sg.org/RelAIEO#Has> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#design> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#HasActor
+<http://www.ontology.audit4sg.org/RelAIEO#HasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasActor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontology.audit4sg.org/RelAIEO#Has> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasActor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#ai4sg> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#actor> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#HasAffordance
+<http://www.ontology.audit4sg.org/RelAIEO#HasAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasAffordance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontology.audit4sg.org/RelAIEO#Has> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasAffordance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#technology> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasAffordance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#affordance> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "HasAffordances" .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#HasApproach
+<http://www.ontology.audit4sg.org/RelAIEO#HasApproach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasApproach> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontology.audit4sg.org/RelAIEO#Has> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasApproach> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#relational_ethic> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasApproach> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#relational_approach> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#HasDimension
+<http://www.ontology.audit4sg.org/RelAIEO#HasDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasDimension> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontology.audit4sg.org/RelAIEO#Has> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasDimension> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#socio_technical_system> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasDimension> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#HasDomain
+<http://www.ontology.audit4sg.org/RelAIEO#HasDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasDomain> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontology.audit4sg.org/RelAIEO#Has> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#ai4sg> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasDomain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#domain> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#HasExpectation
+<http://www.ontology.audit4sg.org/RelAIEO#HasExpectation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasExpectation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontology.audit4sg.org/RelAIEO#Has> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasExpectation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#ai_system> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasExpectation> <http://www.w3.org/2000/01/rdf-schema#range> <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#HasImpact
+<http://www.ontology.audit4sg.org/RelAIEO#HasImpact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasImpact> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasImpact> <http://www.w3.org/2000/01/rdf-schema#range> <http://ateontology.protect.linkeddata.es/def/ateo#approach> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#HasType
+<http://www.ontology.audit4sg.org/RelAIEO#HasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontology.audit4sg.org/RelAIEO#Has> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#developer> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#equality_consumer> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#funder> .
+<http://www.ontology.audit4sg.org/RelAIEO#HasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ImprovedBy
+<http://www.ontology.audit4sg.org/RelAIEO#ImprovedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#ImprovedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#non_human_autonomy> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#Include
+<http://www.ontology.audit4sg.org/RelAIEO#Include> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#Include> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#Include> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#techno-human_ecology> .
+<http://www.ontology.audit4sg.org/RelAIEO#Include> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#type_of_relation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#InfluencedBy
+<http://www.ontology.audit4sg.org/RelAIEO#InfluencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#InfluencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#InfluencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#design> .
+<http://www.ontology.audit4sg.org/RelAIEO#InfluencedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#Intersect
+<http://www.ontology.audit4sg.org/RelAIEO#Intersect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#Intersect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ReflexiveProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#Intersect> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#material_semiotic_difference> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#IsA
+<http://www.ontology.audit4sg.org/RelAIEO#IsA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#IsA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#technology> .
+<http://www.ontology.audit4sg.org/RelAIEO#IsA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#socio_technical_system> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#IsAbout
+<http://www.ontology.audit4sg.org/RelAIEO#IsAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#IsAbout> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#IsAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ateontology.protect.linkeddata.es/def/ateo#ethical_assessment> .
+<http://www.ontology.audit4sg.org/RelAIEO#IsAbout> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#human_machine_relation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#Manipulate
+<http://www.ontology.audit4sg.org/RelAIEO#Manipulate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#Manipulate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#affordance> .
+<http://www.ontology.audit4sg.org/RelAIEO#Manipulate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#rhetoric> .
+<http://www.ontology.audit4sg.org/RelAIEO#Manipulate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation> .
+<http://www.ontology.audit4sg.org/RelAIEO#Manipulate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#human_action> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#Redefine
+<http://www.ontology.audit4sg.org/RelAIEO#Redefine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#Redefine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#relational_approach> .
+<http://www.ontology.audit4sg.org/RelAIEO#Redefine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#StudyOf
+<http://www.ontology.audit4sg.org/RelAIEO#StudyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#StudyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#relational_approach> .
+<http://www.ontology.audit4sg.org/RelAIEO#StudyOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#socio_technical_system> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#UsedIn
+<http://www.ontology.audit4sg.org/RelAIEO#UsedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#UsedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.ontology.audit4sg.org/RelAIEO#UsedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology.audit4sg.org/RelAIEO#ai_system> .
+<http://www.ontology.audit4sg.org/RelAIEO#UsedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology.audit4sg.org/RelAIEO#ai4sg> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://aexpectontology.protect.linkeddata.es/def/aexp#aim_expected
+<http://aexpectontology.protect.linkeddata.es/def/aexp#aim_expected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aexpectontology.protect.linkeddata.es/def/aexp#aim_expected> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+# 
+# http://aexpectontology.protect.linkeddata.es/def/aexp#audience_expected
+<http://aexpectontology.protect.linkeddata.es/def/aexp#audience_expected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aexpectontology.protect.linkeddata.es/def/aexp#audience_expected> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+# 
+# http://aexpectontology.protect.linkeddata.es/def/aexp#expectation
+<http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://aexpectontology.protect.linkeddata.es/def/aexp#performance_in_societal_practices
+<http://aexpectontology.protect.linkeddata.es/def/aexp#performance_in_societal_practices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aexpectontology.protect.linkeddata.es/def/aexp#performance_in_societal_practices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+# 
+# http://aexpectontology.protect.linkeddata.es/def/aexp#use_of_technology
+<http://aexpectontology.protect.linkeddata.es/def/aexp#use_of_technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://aexpectontology.protect.linkeddata.es/def/aexp#use_of_technology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+# 
+# http://ateontology.protect.linkeddata.es/def/ateo#approach
+<http://ateontology.protect.linkeddata.es/def/ateo#approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://ateontology.protect.linkeddata.es/def/ateo#ethical_assessment
+<http://ateontology.protect.linkeddata.es/def/ateo#ethical_assessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ateontology.protect.linkeddata.es/def/ateo#ethical_assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethic> .
+# 
+# http://ateontology.protect.linkeddata.es/def/ateo#reduced_capability
+<http://ateontology.protect.linkeddata.es/def/ateo#reduced_capability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ateontology.protect.linkeddata.es/def/ateo#reduced_capability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#academic_funding
+<http://www.ontology.audit4sg.org/RelAIEO#academic_funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#academic_funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#academic_institution
+<http://www.ontology.audit4sg.org/RelAIEO#academic_institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#academic_institution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#achieve_sdg_goals
+<http://www.ontology.audit4sg.org/RelAIEO#achieve_sdg_goals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#achieve_sdg_goals> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#action_research
+<http://www.ontology.audit4sg.org/RelAIEO#action_research> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#action_research> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#activists
+<http://www.ontology.audit4sg.org/RelAIEO#activists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#activists> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#equality_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#actor
+<http://www.ontology.audit4sg.org/RelAIEO#actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#affordance
+<http://www.ontology.audit4sg.org/RelAIEO#affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ai4sg
+<http://www.ontology.audit4sg.org/RelAIEO#ai4sg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ai_system
+<http://www.ontology.audit4sg.org/RelAIEO#ai_system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ai_system> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#technology> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#angel_funding
+<http://www.ontology.audit4sg.org/RelAIEO#angel_funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#angel_funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#anonymized_data
+<http://www.ontology.audit4sg.org/RelAIEO#anonymized_data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#anonymized_data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_data> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#anthropomorphism
+<http://www.ontology.audit4sg.org/RelAIEO#anthropomorphism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#anthropomorphism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale
+<http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#artistic
+<http://www.ontology.audit4sg.org/RelAIEO#artistic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#artistic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#assumption
+<http://www.ontology.audit4sg.org/RelAIEO#assumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#assumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#autonomous_self
+<http://www.ontology.audit4sg.org/RelAIEO#autonomous_self> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#autonomous_self> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#non_relational_approach> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#bias
+<http://www.ontology.audit4sg.org/RelAIEO#bias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#bias> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#bigdata_analysis
+<http://www.ontology.audit4sg.org/RelAIEO#bigdata_analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#bigdata_analysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#quantiative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#borrower
+<http://www.ontology.audit4sg.org/RelAIEO#borrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#borrower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#care_ethic
+<http://www.ontology.audit4sg.org/RelAIEO#care_ethic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#care_ethic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#case_study
+<http://www.ontology.audit4sg.org/RelAIEO#case_study> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#case_study> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#caste
+<http://www.ontology.audit4sg.org/RelAIEO#caste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#caste> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#material_semiotic_difference> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#censorship
+<http://www.ontology.audit4sg.org/RelAIEO#censorship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#censorship> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#city
+<http://www.ontology.audit4sg.org/RelAIEO#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#city> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#co-design
+<http://www.ontology.audit4sg.org/RelAIEO#co-design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#co-design> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#co-relating
+<http://www.ontology.audit4sg.org/RelAIEO#co-relating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#co-relating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_relation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#coaching_centre
+<http://www.ontology.audit4sg.org/RelAIEO#coaching_centre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#coaching_centre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#collective
+<http://www.ontology.audit4sg.org/RelAIEO#collective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#collective> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#communities
+<http://www.ontology.audit4sg.org/RelAIEO#communities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#communities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#equality_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#community
+<http://www.ontology.audit4sg.org/RelAIEO#community> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#community> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#community_driven
+<http://www.ontology.audit4sg.org/RelAIEO#community_driven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#community_driven> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#consequence
+<http://www.ontology.audit4sg.org/RelAIEO#consequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#consumer
+<http://www.ontology.audit4sg.org/RelAIEO#consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#consumer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#user> .
+<http://www.ontology.audit4sg.org/RelAIEO#consumer> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontology.audit4sg.org/RelAIEO#end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#content_developer_publisher
+<http://www.ontology.audit4sg.org/RelAIEO#content_developer_publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#content_developer_publisher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#corporate_funding
+<http://www.ontology.audit4sg.org/RelAIEO#corporate_funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#corporate_funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#critical_discourse_analysis
+<http://www.ontology.audit4sg.org/RelAIEO#critical_discourse_analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#critical_discourse_analysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#critical_incident_analysis
+<http://www.ontology.audit4sg.org/RelAIEO#critical_incident_analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#critical_incident_analysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#crowdfunding
+<http://www.ontology.audit4sg.org/RelAIEO#crowdfunding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#crowdfunding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#customer
+<http://www.ontology.audit4sg.org/RelAIEO#customer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#customer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#data_justice
+<http://www.ontology.audit4sg.org/RelAIEO#data_justice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#data_justice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#deep_ecology
+<http://www.ontology.audit4sg.org/RelAIEO#deep_ecology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#deep_ecology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#relational_ontology> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#defamation
+<http://www.ontology.audit4sg.org/RelAIEO#defamation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#defamation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#deliberative_forums
+<http://www.ontology.audit4sg.org/RelAIEO#deliberative_forums> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#deliberative_forums> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#deontological_ethic
+<http://www.ontology.audit4sg.org/RelAIEO#deontological_ethic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#deontological_ethic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#deployment
+<http://www.ontology.audit4sg.org/RelAIEO#deployment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#deployment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#design
+<http://www.ontology.audit4sg.org/RelAIEO#design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#design_motive
+<http://www.ontology.audit4sg.org/RelAIEO#design_motive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#deskilling
+<http://www.ontology.audit4sg.org/RelAIEO#deskilling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#deskilling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#developer
+<http://www.ontology.audit4sg.org/RelAIEO#developer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#developer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#human> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#developer_as_active_practitioner
+<http://www.ontology.audit4sg.org/RelAIEO#developer_as_active_practitioner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#developer_as_active_practitioner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#disruptive
+<http://www.ontology.audit4sg.org/RelAIEO#disruptive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#disruptive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+<http://www.ontology.audit4sg.org/RelAIEO#disruptive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#rhetoric> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#district
+<http://www.ontology.audit4sg.org/RelAIEO#district> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#district> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#domain
+<http://www.ontology.audit4sg.org/RelAIEO#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#economic_consumer
+<http://www.ontology.audit4sg.org/RelAIEO#economic_consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#economic_consumer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#economic_empowerement
+<http://www.ontology.audit4sg.org/RelAIEO#economic_empowerement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#economic_empowerement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#domain> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#economic_end_user
+<http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#education
+<http://www.ontology.audit4sg.org/RelAIEO#education> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#education> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#domain> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#education_consumer
+<http://www.ontology.audit4sg.org/RelAIEO#education_consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#education_consumer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#education_end_user
+<http://www.ontology.audit4sg.org/RelAIEO#education_end_user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#education_end_user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#employee
+<http://www.ontology.audit4sg.org/RelAIEO#employee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#employee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#end_user
+<http://www.ontology.audit4sg.org/RelAIEO#end_user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#end_user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#environmental_impact
+<http://www.ontology.audit4sg.org/RelAIEO#environmental_impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#environmental_impact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#equality_and_inclusion
+<http://www.ontology.audit4sg.org/RelAIEO#equality_and_inclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#equality_and_inclusion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#domain> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#equality_consumer
+<http://www.ontology.audit4sg.org/RelAIEO#equality_consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#equality_consumer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#equality_end_user
+<http://www.ontology.audit4sg.org/RelAIEO#equality_end_user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#equality_end_user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#equity
+<http://www.ontology.audit4sg.org/RelAIEO#equity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#equity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethic
+<http://www.ontology.audit4sg.org/RelAIEO#ethic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethic_dumping
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_dumping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_dumping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethic_lobbying
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_lobbying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_lobbying> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethic_shirking
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_shirking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_shirking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethic_shopping
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_shopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_shopping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethic_washing
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_washing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethic_washing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethical_dilemma
+<http://www.ontology.audit4sg.org/RelAIEO#ethical_dilemma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethical_dilemma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethical_framework
+<http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethic> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter
+<http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethic> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethico_political_care
+<http://www.ontology.audit4sg.org/RelAIEO#ethico_political_care> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethico_political_care> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethics_as_political
+<http://www.ontology.audit4sg.org/RelAIEO#ethics_as_political> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethics_as_political> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation
+<http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethic> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ethnographic_research
+<http://www.ontology.audit4sg.org/RelAIEO#ethnographic_research> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ethnographic_research> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#exclusionary_norm
+<http://www.ontology.audit4sg.org/RelAIEO#exclusionary_norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#exclusionary_norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#experiment
+<http://www.ontology.audit4sg.org/RelAIEO#experiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#experiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#explainability
+<http://www.ontology.audit4sg.org/RelAIEO#explainability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#explainability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#extra-relating
+<http://www.ontology.audit4sg.org/RelAIEO#extra-relating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#extra-relating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_relation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#fairness
+<http://www.ontology.audit4sg.org/RelAIEO#fairness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#fairness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#farmer
+<http://www.ontology.audit4sg.org/RelAIEO#farmer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#farmer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#feminist_ethic
+<http://www.ontology.audit4sg.org/RelAIEO#feminist_ethic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#feminist_ethic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#financial_institutions
+<http://www.ontology.audit4sg.org/RelAIEO#financial_institutions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#financial_institutions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#focus_group
+<http://www.ontology.audit4sg.org/RelAIEO#focus_group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#focus_group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#for_profit
+<http://www.ontology.audit4sg.org/RelAIEO#for_profit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#for_profit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#freelancer
+<http://www.ontology.audit4sg.org/RelAIEO#freelancer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#freelancer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#worker> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#funder
+<http://www.ontology.audit4sg.org/RelAIEO#funder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#funder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#human> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#gender
+<http://www.ontology.audit4sg.org/RelAIEO#gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#gender> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#material_semiotic_difference> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#gig-worker
+<http://www.ontology.audit4sg.org/RelAIEO#gig-worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#gig-worker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#worker> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#global
+<http://www.ontology.audit4sg.org/RelAIEO#global> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#global> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#government_agency
+<http://www.ontology.audit4sg.org/RelAIEO#government_agency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#government_agency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#government_funding
+<http://www.ontology.audit4sg.org/RelAIEO#government_funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#government_funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#groups
+<http://www.ontology.audit4sg.org/RelAIEO#groups> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#groups> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#equality_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#harmony
+<http://www.ontology.audit4sg.org/RelAIEO#harmony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#harmony> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#hate_speech
+<http://www.ontology.audit4sg.org/RelAIEO#hate_speech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#hate_speech> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#human
+<http://www.ontology.audit4sg.org/RelAIEO#human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#actor> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#human_action
+<http://www.ontology.audit4sg.org/RelAIEO#human_action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#human_machine_relation
+<http://www.ontology.audit4sg.org/RelAIEO#human_machine_relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#hype
+<http://www.ontology.audit4sg.org/RelAIEO#hype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#hype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#hyped
+<http://www.ontology.audit4sg.org/RelAIEO#hyped> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#hyped> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#rhetoric> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk
+<http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#immigrant
+<http://www.ontology.audit4sg.org/RelAIEO#immigrant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#immigrant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#in_on_or_out_of_the_decision-making_loop
+<http://www.ontology.audit4sg.org/RelAIEO#in_on_or_out_of_the_decision-making_loop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#in_on_or_out_of_the_decision-making_loop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#human_machine_relation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#inaccuracy
+<http://www.ontology.audit4sg.org/RelAIEO#inaccuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#inaccuracy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#individual
+<http://www.ontology.audit4sg.org/RelAIEO#individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#individual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#individuals
+<http://www.ontology.audit4sg.org/RelAIEO#individuals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#individuals> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#equality_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#industry_association
+<http://www.ontology.audit4sg.org/RelAIEO#industry_association> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#industry_association> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#inequality
+<http://www.ontology.audit4sg.org/RelAIEO#inequality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#inequality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#information_disorder
+<http://www.ontology.audit4sg.org/RelAIEO#information_disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#information_disorder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#information_ethic
+<http://www.ontology.audit4sg.org/RelAIEO#information_ethic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#information_ethic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#intelligence_as_emergent
+<http://www.ontology.audit4sg.org/RelAIEO#intelligence_as_emergent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#intelligence_as_emergent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#intended
+<http://www.ontology.audit4sg.org/RelAIEO#intended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#intended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#consequence> .
+<http://www.ontology.audit4sg.org/RelAIEO#intended> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontology.audit4sg.org/RelAIEO#unintended> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#inter-relating
+<http://www.ontology.audit4sg.org/RelAIEO#inter-relating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#inter-relating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_relation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#intergovernmental_organization
+<http://www.ontology.audit4sg.org/RelAIEO#intergovernmental_organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#intergovernmental_organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#interpretation
+<http://www.ontology.audit4sg.org/RelAIEO#interpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#interpretation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#interview
+<http://www.ontology.audit4sg.org/RelAIEO#interview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#interview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#quantiative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#intra-relating
+<http://www.ontology.audit4sg.org/RelAIEO#intra-relating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#intra-relating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_relation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#justice
+<http://www.ontology.audit4sg.org/RelAIEO#justice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#justice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#knowing-how
+<http://www.ontology.audit4sg.org/RelAIEO#knowing-how> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#knowing-how> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethico_political_care> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#knowing-what
+<http://www.ontology.audit4sg.org/RelAIEO#knowing-what> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#knowing-what> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethico_political_care> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#knowing-when
+<http://www.ontology.audit4sg.org/RelAIEO#knowing-when> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#knowing-when> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethico_political_care> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#legal_compliance
+<http://www.ontology.audit4sg.org/RelAIEO#legal_compliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#legal_compliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#lender
+<http://www.ontology.audit4sg.org/RelAIEO#lender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#lender> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#local
+<http://www.ontology.audit4sg.org/RelAIEO#local> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#local> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#manipulation
+<http://www.ontology.audit4sg.org/RelAIEO#manipulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#manipulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#market_oriented
+<http://www.ontology.audit4sg.org/RelAIEO#market_oriented> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#market_oriented> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#material_psychological_harm
+<http://www.ontology.audit4sg.org/RelAIEO#material_psychological_harm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#material_psychological_harm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#material_semiotic_difference
+<http://www.ontology.audit4sg.org/RelAIEO#material_semiotic_difference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#material_semiotic_difference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#relational_ontology> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#mathematical_criteria
+<http://www.ontology.audit4sg.org/RelAIEO#mathematical_criteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#mathematical_criteria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#non_relational_approach> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#matter_of_concern
+<http://www.ontology.audit4sg.org/RelAIEO#matter_of_concern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#matter_of_concern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_mattering> .
+<http://www.ontology.audit4sg.org/RelAIEO#matter_of_concern> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontology.audit4sg.org/RelAIEO#matter_of_fact> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#matter_of_fact
+<http://www.ontology.audit4sg.org/RelAIEO#matter_of_fact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#matter_of_fact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_mattering> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#matter_of_interface
+<http://www.ontology.audit4sg.org/RelAIEO#matter_of_interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#matter_of_interface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_mattering> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#method
+<http://www.ontology.audit4sg.org/RelAIEO#method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#multi_stakeholder_engagement
+<http://www.ontology.audit4sg.org/RelAIEO#multi_stakeholder_engagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#multi_stakeholder_engagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension
+<http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#multiple_use
+<http://www.ontology.audit4sg.org/RelAIEO#multiple_use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#multiple_use> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#national
+<http://www.ontology.audit4sg.org/RelAIEO#national> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#national> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#neighbourhood
+<http://www.ontology.audit4sg.org/RelAIEO#neighbourhood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#neighbourhood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#new_risks
+<http://www.ontology.audit4sg.org/RelAIEO#new_risks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#new_risks> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#new_scale
+<http://www.ontology.audit4sg.org/RelAIEO#new_scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#new_scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#ngo
+<http://www.ontology.audit4sg.org/RelAIEO#ngo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#ngo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#non-personal_data
+<http://www.ontology.audit4sg.org/RelAIEO#non-personal_data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#non-personal_data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_data> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#non_discrimination
+<http://www.ontology.audit4sg.org/RelAIEO#non_discrimination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#non_discrimination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#non_human
+<http://www.ontology.audit4sg.org/RelAIEO#non_human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#non_human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#actor> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#non_human_autonomy
+<http://www.ontology.audit4sg.org/RelAIEO#non_human_autonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#non_human_autonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#non_relational_approach
+<http://www.ontology.audit4sg.org/RelAIEO#non_relational_approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#nongovernmental_organization
+<http://www.ontology.audit4sg.org/RelAIEO#nongovernmental_organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#nongovernmental_organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#nonprofit
+<http://www.ontology.audit4sg.org/RelAIEO#nonprofit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#nonprofit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#not_listed
+<http://www.ontology.audit4sg.org/RelAIEO#not_listed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#notice_and_consent
+<http://www.ontology.audit4sg.org/RelAIEO#notice_and_consent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#notice_and_consent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#non_relational_approach> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#online_platform
+<http://www.ontology.audit4sg.org/RelAIEO#online_platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#online_platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#other
+<http://www.ontology.audit4sg.org/RelAIEO#other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#other> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#parent
+<http://www.ontology.audit4sg.org/RelAIEO#parent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#parent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#participatory_design
+<http://www.ontology.audit4sg.org/RelAIEO#participatory_design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#participatory_design> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#paternalist
+<http://www.ontology.audit4sg.org/RelAIEO#paternalist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#paternalist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#permanent
+<http://www.ontology.audit4sg.org/RelAIEO#permanent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#permanent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#worker> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#personal_data
+<http://www.ontology.audit4sg.org/RelAIEO#personal_data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#personal_data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_data> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#philanthropic_funding
+<http://www.ontology.audit4sg.org/RelAIEO#philanthropic_funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#philanthropic_funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#polarisation_and_radicalization
+<http://www.ontology.audit4sg.org/RelAIEO#polarisation_and_radicalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#polarisation_and_radicalization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#policy_maker
+<http://www.ontology.audit4sg.org/RelAIEO#policy_maker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#policy_maker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#postcolonial_ethic
+<http://www.ontology.audit4sg.org/RelAIEO#postcolonial_ethic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#postcolonial_ethic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#proactive
+<http://www.ontology.audit4sg.org/RelAIEO#proactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#proactive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#prospective_transparency
+<http://www.ontology.audit4sg.org/RelAIEO#prospective_transparency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#prospective_transparency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#transparency> .
+<http://www.ontology.audit4sg.org/RelAIEO#prospective_transparency> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontology.audit4sg.org/RelAIEO#retrospective_tranparency> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#qualitative
+<http://www.ontology.audit4sg.org/RelAIEO#qualitative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#qualitative> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#method> .
+<http://www.ontology.audit4sg.org/RelAIEO#qualitative> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontology.audit4sg.org/RelAIEO#quantiative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#quantiative
+<http://www.ontology.audit4sg.org/RelAIEO#quantiative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#quantiative> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#method> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#question
+<http://www.ontology.audit4sg.org/RelAIEO#question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#race
+<http://www.ontology.audit4sg.org/RelAIEO#race> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#race> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#material_semiotic_difference> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#reactive
+<http://www.ontology.audit4sg.org/RelAIEO#reactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#reactive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter
+<http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#relational_approach> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#reduced_accessbility
+<http://www.ontology.audit4sg.org/RelAIEO#reduced_accessbility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#reduced_accessbility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#relational_approach
+<http://www.ontology.audit4sg.org/RelAIEO#relational_approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#relational_approach> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#relationality> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#relational_ethic
+<http://www.ontology.audit4sg.org/RelAIEO#relational_ethic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#relational_ethic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#relational_ontology
+<http://www.ontology.audit4sg.org/RelAIEO#relational_ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#relational_ontology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#relational_approach> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#relationality
+<http://www.ontology.audit4sg.org/RelAIEO#relationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#relevance
+<http://www.ontology.audit4sg.org/RelAIEO#relevance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#relevance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#research_institute
+<http://www.ontology.audit4sg.org/RelAIEO#research_institute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#research_institute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#researcher
+<http://www.ontology.audit4sg.org/RelAIEO#researcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#researcher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#respects_privacy
+<http://www.ontology.audit4sg.org/RelAIEO#respects_privacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#respects_privacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#responsibility
+<http://www.ontology.audit4sg.org/RelAIEO#responsibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#responsibility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#responsiblity_as_responseability
+<http://www.ontology.audit4sg.org/RelAIEO#responsiblity_as_responseability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#responsiblity_as_responseability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#retrospective_tranparency
+<http://www.ontology.audit4sg.org/RelAIEO#retrospective_tranparency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#retrospective_tranparency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#transparency> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#rhetoric
+<http://www.ontology.audit4sg.org/RelAIEO#rhetoric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#safety_and_security
+<http://www.ontology.audit4sg.org/RelAIEO#safety_and_security> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#safety_and_security> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#scalar
+<http://www.ontology.audit4sg.org/RelAIEO#scalar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#scalar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#school
+<http://www.ontology.audit4sg.org/RelAIEO#school> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#school> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#self-funding
+<http://www.ontology.audit4sg.org/RelAIEO#self-funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#self-funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#self_employed
+<http://www.ontology.audit4sg.org/RelAIEO#self_employed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#self_employed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#sensitive_data
+<http://www.ontology.audit4sg.org/RelAIEO#sensitive_data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#sensitive_data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_data> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#shared_fairness
+<http://www.ontology.audit4sg.org/RelAIEO#shared_fairness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#shared_fairness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#small_medium_enterprise
+<http://www.ontology.audit4sg.org/RelAIEO#small_medium_enterprise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#small_medium_enterprise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#social_good
+<http://www.ontology.audit4sg.org/RelAIEO#social_good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#social_good> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#social_impact_assesment
+<http://www.ontology.audit4sg.org/RelAIEO#social_impact_assesment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#social_impact_assesment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#social_isolation
+<http://www.ontology.audit4sg.org/RelAIEO#social_isolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#social_isolation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#social_workers
+<http://www.ontology.audit4sg.org/RelAIEO#social_workers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#social_workers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#equality_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#socio_technical_system
+<http://www.ontology.audit4sg.org/RelAIEO#socio_technical_system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#solutionist
+<http://www.ontology.audit4sg.org/RelAIEO#solutionist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#solutionist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#rhetoric> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#solve_social_problem
+<http://www.ontology.audit4sg.org/RelAIEO#solve_social_problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#solve_social_problem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#spatial
+<http://www.ontology.audit4sg.org/RelAIEO#spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#spatial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#speculative_design
+<http://www.ontology.audit4sg.org/RelAIEO#speculative_design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#speculative_design> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#speculative_ethic
+<http://www.ontology.audit4sg.org/RelAIEO#speculative_ethic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#speculative_ethic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#startup
+<http://www.ontology.audit4sg.org/RelAIEO#startup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#startup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#stock_trader
+<http://www.ontology.audit4sg.org/RelAIEO#stock_trader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#stock_trader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#structurally_disadvantaged
+<http://www.ontology.audit4sg.org/RelAIEO#structurally_disadvantaged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#structurally_disadvantaged> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#student_and_learner
+<http://www.ontology.audit4sg.org/RelAIEO#student_and_learner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#student_and_learner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#surveillance
+<http://www.ontology.audit4sg.org/RelAIEO#surveillance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#surveillance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#survey
+<http://www.ontology.audit4sg.org/RelAIEO#survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#survey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#quantiative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#teacher_and_educator
+<http://www.ontology.audit4sg.org/RelAIEO#teacher_and_educator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#teacher_and_educator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#tech-centric
+<http://www.ontology.audit4sg.org/RelAIEO#tech-centric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#tech-centric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#design_motive> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#techno-human_ecology
+<http://www.ontology.audit4sg.org/RelAIEO#techno-human_ecology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#techno-human_ecology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#deep_ecology> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#technology
+<http://www.ontology.audit4sg.org/RelAIEO#technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#technology_company
+<http://www.ontology.audit4sg.org/RelAIEO#technology_company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#technology_company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#temporal
+<http://www.ontology.audit4sg.org/RelAIEO#temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#temporal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#temporary
+<http://www.ontology.audit4sg.org/RelAIEO#temporary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#temporary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#worker> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#think_tank
+<http://www.ontology.audit4sg.org/RelAIEO#think_tank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#think_tank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#threat_to_privacy
+<http://www.ontology.audit4sg.org/RelAIEO#threat_to_privacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#threat_to_privacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#threat_to_safety
+<http://www.ontology.audit4sg.org/RelAIEO#threat_to_safety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#threat_to_safety> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#town
+<http://www.ontology.audit4sg.org/RelAIEO#town> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#town> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#training_institute
+<http://www.ontology.audit4sg.org/RelAIEO#training_institute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#training_institute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#trans-relating
+<http://www.ontology.audit4sg.org/RelAIEO#trans-relating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#trans-relating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_relation> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#transparency
+<http://www.ontology.audit4sg.org/RelAIEO#transparency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#transparency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#transparency_as_performativity
+<http://www.ontology.audit4sg.org/RelAIEO#transparency_as_performativity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#transparency_as_performativity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#transparency_as_verifiability
+<http://www.ontology.audit4sg.org/RelAIEO#transparency_as_verifiability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#transparency_as_verifiability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#non_relational_approach> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#trust
+<http://www.ontology.audit4sg.org/RelAIEO#trust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#trust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#type_of_data
+<http://www.ontology.audit4sg.org/RelAIEO#type_of_data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#type_of_funding
+<http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#type_of_mattering
+<http://www.ontology.audit4sg.org/RelAIEO#type_of_mattering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#type_of_organization
+<http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#type_of_relation
+<http://www.ontology.audit4sg.org/RelAIEO#type_of_relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#type_of_relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#relationality> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#unaccountability
+<http://www.ontology.audit4sg.org/RelAIEO#unaccountability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#unaccountability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#unemployed
+<http://www.ontology.audit4sg.org/RelAIEO#unemployed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#unemployed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#unemployment
+<http://www.ontology.audit4sg.org/RelAIEO#unemployment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#unemployment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#unfair
+<http://www.ontology.audit4sg.org/RelAIEO#unfair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#unfair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#unintended
+<http://www.ontology.audit4sg.org/RelAIEO#unintended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#unintended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#consequence> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#union
+<http://www.ontology.audit4sg.org/RelAIEO#union> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#union> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#university_and_college
+<http://www.ontology.audit4sg.org/RelAIEO#university_and_college> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#university_and_college> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#education_consumer> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#use
+<http://www.ontology.audit4sg.org/RelAIEO#use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#use> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#user
+<http://www.ontology.audit4sg.org/RelAIEO#user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#human> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#utilitarianism
+<http://www.ontology.audit4sg.org/RelAIEO#utilitarianism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#utilitarianism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#value
+<http://www.ontology.audit4sg.org/RelAIEO#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#value-sensitive_design
+<http://www.ontology.audit4sg.org/RelAIEO#value-sensitive_design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#value-sensitive_design> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#qualitative> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#venture_capital_firm
+<http://www.ontology.audit4sg.org/RelAIEO#venture_capital_firm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#venture_capital_firm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_organization> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#venture_capital_funding
+<http://www.ontology.audit4sg.org/RelAIEO#venture_capital_funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#venture_capital_funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#type_of_funding> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#virtue_ethic
+<http://www.ontology.audit4sg.org/RelAIEO#virtue_ethic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#virtue_ethic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#ethical_framework> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#weakening_of_democracy
+<http://www.ontology.audit4sg.org/RelAIEO#weakening_of_democracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#weakening_of_democracy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#worker
+<http://www.ontology.audit4sg.org/RelAIEO#worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#worker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#economic_end_user> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#for_whom?
+<http://www.ontology.audit4sg.org/RelAIEO#for_whom?> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#for_whom?> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#question> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#how_to_care?
+<http://www.ontology.audit4sg.org/RelAIEO#how_to_care?> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#how_to_care?> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#question> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#what_for?
+<http://www.ontology.audit4sg.org/RelAIEO#what_for?> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#what_for?> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#question> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#who_cares?
+<http://www.ontology.audit4sg.org/RelAIEO#who_cares?> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#who_cares?> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#question> .
+# 
+# http://www.ontology.audit4sg.org/RelAIEO#why_to_care?
+<http://www.ontology.audit4sg.org/RelAIEO#why_to_care?> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology.audit4sg.org/RelAIEO#why_to_care?> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology.audit4sg.org/RelAIEO#question> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#venture_capital_funding> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#self-funding> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#philanthropic_funding> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#government_funding> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#crowdfunding> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#corporate_funding> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#community_driven> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#angel_funding> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#academic_funding> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid11 <http://www.w3.org/2002/07/owl#members> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#venture_capital_firm> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#union> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#think_tank> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#technology_company> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#startup> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#nonprofit> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#nongovernmental_organization> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#intergovernmental_organization> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#industry_association> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#government_agency> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#for_profit> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#collective> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#academic_institution> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid25 <http://www.w3.org/2002/07/owl#members> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#tech-centric> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#solve_social_problem> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#social_good> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#reactive> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#proactive> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#paternalist> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#market_oriented> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#disruptive> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#data_justice> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#achieve_sdg_goals> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid36 <http://www.w3.org/2002/07/owl#members> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#value-sensitive_design> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#speculative_design> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#social_impact_assesment> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#participatory_design> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#multi_stakeholder_engagement> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#focus_group> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#ethnographic_research> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#deliberative_forums> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#critical_incident_analysis> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#critical_discourse_analysis> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#co-design> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#case_study> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#action_research> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid50 <http://www.w3.org/2002/07/owl#members> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#value> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#use> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#temporal> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#spatial> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#scalar> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#interpretation> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#deployment> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#assumption> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid59 <http://www.w3.org/2002/07/owl#members> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#transparency_as_verifiability> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#notice_and_consent> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#mathematical_criteria> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#autonomous_self> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid64 <http://www.w3.org/2002/07/owl#members> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#worker> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#unemployed> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#structurally_disadvantaged> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#stock_trader> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#small_medium_enterprise> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#self_employed> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#lender> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#immigrant> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#farmer> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#employee> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#customer> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#borrower> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid77 <http://www.w3.org/2002/07/owl#members> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#town> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#other> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#neighbourhood> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#national> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#local> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#global> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#district> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#city> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid86 <http://www.w3.org/2002/07/owl#members> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#trans-relating> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#intra-relating> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#inter-relating> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#extra-relating> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#co-relating> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid92 <http://www.w3.org/2002/07/owl#members> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#individuals> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#groups> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#education_end_user> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#communities> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid97 <http://www.w3.org/2002/07/owl#members> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#user> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#funder> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#developer> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid101 <http://www.w3.org/2002/07/owl#members> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#ethic_washing> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#ethic_shopping> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#ethic_shirking> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#ethic_lobbying> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#ethic_dumping> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid107 <http://www.w3.org/2002/07/owl#members> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#transparency_as_performativity> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#intelligence_as_emergent> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#ethico_political_care> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid111 <http://www.w3.org/2002/07/owl#members> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#temporary> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#permanent> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#gig-worker> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#freelancer> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid116 <http://www.w3.org/2002/07/owl#members> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#knowing-when> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#knowing-what> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#knowing-how> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid120 <http://www.w3.org/2002/07/owl#members> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#sensitive_data> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#personal_data> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#non-personal_data> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid124 <http://www.w3.org/2002/07/owl#members> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#why_to_care?> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#who_cares?> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#what_for?> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#how_to_care?> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontology.audit4sg.org/RelAIEO#for_whom?> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

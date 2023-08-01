@@ -1,0 +1,1722 @@
+@prefix : <http://www.ontology.audit4sg.org/RelAIEO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.ontology.audit4sg.org/RelAIEO#> .
+
+<http://www.ontology.audit4sg.org/RelAIEO> rdf:type owl:Ontology ;
+                                            <http://purl.org/dc/elements/1.1/creator> "Cheshta Arora" ,
+                                                                                      "Debarun Sarkar" ;
+                                            <http://purl.org/dc/elements/1.1/license> "GNU General Purpose License v3" ;
+                                            <http://purl.org/dc/elements/1.1/title> "Relational AI Ethics Ontology (RelAIEO)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ateontology.protect.linkeddata.es/def/ateo#studyOf
+<http://ateontology.protect.linkeddata.es/def/ateo#studyOf> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <http://ateontology.protect.linkeddata.es/def/ateo#approach> ;
+                                                            rdfs:range :ai_system ;
+                                                            rdfs:label "ToAudit" .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#Ask
+:Ask rdf:type owl:ObjectProperty ;
+     rdfs:domain :relational_approach ;
+     rdfs:range :question .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#BasedOn
+:BasedOn rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain <http://ateontology.protect.linkeddata.es/def/ateo#ethical_assessment> ;
+         rdfs:range :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#CriticalOf
+:CriticalOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :relational_ethic ;
+            rdfs:range :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#CutAcross
+:CutAcross rdf:type owl:ObjectProperty ;
+           rdfs:domain :consumer ,
+                       :equality_end_user ;
+           rdfs:range :domain ,
+                      :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ExperimentWith
+:ExperimentWith rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :relational_approach ;
+                rdfs:range :method .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#FocusOn
+:FocusOn rdf:type owl:ObjectProperty ;
+         rdfs:domain :relational_approach ;
+         rdfs:range :matter_of_concern .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#GiveFunding
+:GiveFunding rdf:type owl:ObjectProperty ;
+             rdfs:domain :funder ;
+             rdfs:range :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#Has
+:Has rdf:type owl:ObjectProperty ;
+     rdfs:domain :ai_system ,
+                 :design ;
+     rdfs:range :consequence ,
+                :design .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#HasActor
+:HasActor rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :Has ;
+          rdfs:domain :ai4sg ;
+          rdfs:range :actor .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#HasAffordance
+:HasAffordance rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :Has ;
+               rdfs:domain :technology ;
+               rdfs:range :affordance ;
+               rdfs:label "HasAffordances" .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#HasApproach
+:HasApproach rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :Has ;
+             rdfs:domain :relational_ethic ;
+             rdfs:range :relational_approach .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#HasDimension
+:HasDimension rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :Has ;
+              rdfs:domain :socio_technical_system ;
+              rdfs:range :multiple_dimension .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#HasDomain
+:HasDomain rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :Has ;
+           rdfs:domain :ai4sg ;
+           rdfs:range :domain .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#HasExpectation
+:HasExpectation rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :Has ;
+                rdfs:domain :ai_system ;
+                rdfs:range <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#HasImpact
+:HasImpact rdf:type owl:ObjectProperty ;
+           rdfs:domain :ethical_framework ;
+           rdfs:range <http://ateontology.protect.linkeddata.es/def/ateo#approach> .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#HasType
+:HasType rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :Has ;
+         rdfs:domain :developer ,
+                     :equality_consumer ,
+                     :funder ;
+         rdfs:range :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ImprovedBy
+:ImprovedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :non_human_autonomy .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#Include
+:Include rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :techno-human_ecology ;
+         rdfs:range :type_of_relation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#InfluencedBy
+:InfluencedBy rdf:type owl:ObjectProperty ,
+                       owl:TransitiveProperty ;
+              rdfs:domain :design ;
+              rdfs:range :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#Intersect
+:Intersect rdf:type owl:ObjectProperty ,
+                    owl:ReflexiveProperty ;
+           rdfs:domain :material_semiotic_difference .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#IsA
+:IsA rdf:type owl:ObjectProperty ;
+     rdfs:domain :technology ;
+     rdfs:range :socio_technical_system .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#IsAbout
+:IsAbout rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain <http://ateontology.protect.linkeddata.es/def/ateo#ethical_assessment> ;
+         rdfs:range :human_machine_relation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#Manipulate
+:Manipulate rdf:type owl:ObjectProperty ;
+            rdfs:domain :affordance ,
+                        :rhetoric ;
+            rdfs:range :ethics_manipulation ,
+                       :human_action .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#Redefine
+:Redefine rdf:type owl:ObjectProperty ;
+          rdfs:domain :relational_approach ;
+          rdfs:range :redefined_ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#StudyOf
+:StudyOf rdf:type owl:ObjectProperty ;
+         rdfs:domain :relational_approach ;
+         rdfs:range :socio_technical_system .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#UsedIn
+:UsedIn rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdfs:domain :ai_system ;
+        rdfs:range :ai4sg .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://aexpectontology.protect.linkeddata.es/def/aexp#aim_expected
+<http://aexpectontology.protect.linkeddata.es/def/aexp#aim_expected> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+
+
+###  http://aexpectontology.protect.linkeddata.es/def/aexp#audience_expected
+<http://aexpectontology.protect.linkeddata.es/def/aexp#audience_expected> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+
+
+###  http://aexpectontology.protect.linkeddata.es/def/aexp#expectation
+<http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> rdf:type owl:Class .
+
+
+###  http://aexpectontology.protect.linkeddata.es/def/aexp#performance_in_societal_practices
+<http://aexpectontology.protect.linkeddata.es/def/aexp#performance_in_societal_practices> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+
+
+###  http://aexpectontology.protect.linkeddata.es/def/aexp#use_of_technology
+<http://aexpectontology.protect.linkeddata.es/def/aexp#use_of_technology> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://aexpectontology.protect.linkeddata.es/def/aexp#expectation> .
+
+
+###  http://ateontology.protect.linkeddata.es/def/ateo#approach
+<http://ateontology.protect.linkeddata.es/def/ateo#approach> rdf:type owl:Class .
+
+
+###  http://ateontology.protect.linkeddata.es/def/ateo#ethical_assessment
+<http://ateontology.protect.linkeddata.es/def/ateo#ethical_assessment> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :ethic .
+
+
+###  http://ateontology.protect.linkeddata.es/def/ateo#reduced_capability
+<http://ateontology.protect.linkeddata.es/def/ateo#reduced_capability> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#academic_funding
+:academic_funding rdf:type owl:Class ;
+                  rdfs:subClassOf :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#academic_institution
+:academic_institution rdf:type owl:Class ;
+                      rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#achieve_sdg_goals
+:achieve_sdg_goals rdf:type owl:Class ;
+                   rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#action_research
+:action_research rdf:type owl:Class ;
+                 rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#activists
+:activists rdf:type owl:Class ;
+           rdfs:subClassOf :equality_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#actor
+:actor rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#affordance
+:affordance rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ai4sg
+:ai4sg rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ai_system
+:ai_system rdf:type owl:Class ;
+           rdfs:subClassOf :technology .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#angel_funding
+:angel_funding rdf:type owl:Class ;
+               rdfs:subClassOf :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#anonymized_data
+:anonymized_data rdf:type owl:Class ;
+                 rdfs:subClassOf :type_of_data .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#anthropomorphism
+:anthropomorphism rdf:type owl:Class ;
+                  rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#appropriate_scale
+:appropriate_scale rdf:type owl:Class ;
+                   rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#artistic
+:artistic rdf:type owl:Class ;
+          rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#assumption
+:assumption rdf:type owl:Class ;
+            rdfs:subClassOf :multiple_dimension .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#autonomous_self
+:autonomous_self rdf:type owl:Class ;
+                 rdfs:subClassOf :non_relational_approach .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#bias
+:bias rdf:type owl:Class ;
+      rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#bigdata_analysis
+:bigdata_analysis rdf:type owl:Class ;
+                  rdfs:subClassOf :quantiative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#borrower
+:borrower rdf:type owl:Class ;
+          rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#care_ethic
+:care_ethic rdf:type owl:Class ;
+            rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#case_study
+:case_study rdf:type owl:Class ;
+            rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#caste
+:caste rdf:type owl:Class ;
+       rdfs:subClassOf :material_semiotic_difference .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#censorship
+:censorship rdf:type owl:Class ;
+            rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#city
+:city rdf:type owl:Class ;
+      rdfs:subClassOf :appropriate_scale .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#co-design
+:co-design rdf:type owl:Class ;
+           rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#co-relating
+:co-relating rdf:type owl:Class ;
+             rdfs:subClassOf :type_of_relation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#coaching_centre
+:coaching_centre rdf:type owl:Class ;
+                 rdfs:subClassOf :education_consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#collective
+:collective rdf:type owl:Class ;
+            rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#communities
+:communities rdf:type owl:Class ;
+             rdfs:subClassOf :equality_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#community
+:community rdf:type owl:Class ;
+           rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#community_driven
+:community_driven rdf:type owl:Class ;
+                  rdfs:subClassOf :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#consequence
+:consequence rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#consumer
+:consumer rdf:type owl:Class ;
+          rdfs:subClassOf :user ;
+          owl:disjointWith :end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#content_developer_publisher
+:content_developer_publisher rdf:type owl:Class ;
+                             rdfs:subClassOf :education_consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#corporate_funding
+:corporate_funding rdf:type owl:Class ;
+                   rdfs:subClassOf :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#critical_discourse_analysis
+:critical_discourse_analysis rdf:type owl:Class ;
+                             rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#critical_incident_analysis
+:critical_incident_analysis rdf:type owl:Class ;
+                            rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#crowdfunding
+:crowdfunding rdf:type owl:Class ;
+              rdfs:subClassOf :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#customer
+:customer rdf:type owl:Class ;
+          rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#data_justice
+:data_justice rdf:type owl:Class ;
+              rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#deep_ecology
+:deep_ecology rdf:type owl:Class ;
+              rdfs:subClassOf :relational_ontology .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#defamation
+:defamation rdf:type owl:Class ;
+            rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#deliberative_forums
+:deliberative_forums rdf:type owl:Class ;
+                     rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#deontological_ethic
+:deontological_ethic rdf:type owl:Class ;
+                     rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#deployment
+:deployment rdf:type owl:Class ;
+            rdfs:subClassOf :multiple_dimension .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#design
+:design rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#design_motive
+:design_motive rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#deskilling
+:deskilling rdf:type owl:Class ;
+            rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#developer
+:developer rdf:type owl:Class ;
+           rdfs:subClassOf :human .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#developer_as_active_practitioner
+:developer_as_active_practitioner rdf:type owl:Class ;
+                                  rdfs:subClassOf :redefined_ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#disruptive
+:disruptive rdf:type owl:Class ;
+            rdfs:subClassOf :design_motive ,
+                            :rhetoric .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#district
+:district rdf:type owl:Class ;
+          rdfs:subClassOf :appropriate_scale .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#domain
+:domain rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#economic_consumer
+:economic_consumer rdf:type owl:Class ;
+                   rdfs:subClassOf :consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#economic_empowerement
+:economic_empowerement rdf:type owl:Class ;
+                       rdfs:subClassOf :domain .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#economic_end_user
+:economic_end_user rdf:type owl:Class ;
+                   rdfs:subClassOf :end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#education
+:education rdf:type owl:Class ;
+           rdfs:subClassOf :domain .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#education_consumer
+:education_consumer rdf:type owl:Class ;
+                    rdfs:subClassOf :consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#education_end_user
+:education_end_user rdf:type owl:Class ;
+                    rdfs:subClassOf :end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#employee
+:employee rdf:type owl:Class ;
+          rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#end_user
+:end_user rdf:type owl:Class ;
+          rdfs:subClassOf :user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#environmental_impact
+:environmental_impact rdf:type owl:Class ;
+                      rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#equality_and_inclusion
+:equality_and_inclusion rdf:type owl:Class ;
+                        rdfs:subClassOf :domain .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#equality_consumer
+:equality_consumer rdf:type owl:Class ;
+                   rdfs:subClassOf :consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#equality_end_user
+:equality_end_user rdf:type owl:Class ;
+                   rdfs:subClassOf :end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#equity
+:equity rdf:type owl:Class ;
+        rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethic
+:ethic rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethic_dumping
+:ethic_dumping rdf:type owl:Class ;
+               rdfs:subClassOf :ethics_manipulation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethic_lobbying
+:ethic_lobbying rdf:type owl:Class ;
+                rdfs:subClassOf :ethics_manipulation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethic_shirking
+:ethic_shirking rdf:type owl:Class ;
+                rdfs:subClassOf :ethics_manipulation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethic_shopping
+:ethic_shopping rdf:type owl:Class ;
+                rdfs:subClassOf :ethics_manipulation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethic_washing
+:ethic_washing rdf:type owl:Class ;
+               rdfs:subClassOf :ethics_manipulation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethical_dilemma
+:ethical_dilemma rdf:type owl:Class ;
+                 rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethical_framework
+:ethical_framework rdf:type owl:Class ;
+                   rdfs:subClassOf :ethic .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethical_parameter
+:ethical_parameter rdf:type owl:Class ;
+                   rdfs:subClassOf :ethic .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethico_political_care
+:ethico_political_care rdf:type owl:Class ;
+                       rdfs:subClassOf :redefined_ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethics_as_political
+:ethics_as_political rdf:type owl:Class ;
+                     rdfs:subClassOf :redefined_ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethics_manipulation
+:ethics_manipulation rdf:type owl:Class ;
+                     rdfs:subClassOf :ethic .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ethnographic_research
+:ethnographic_research rdf:type owl:Class ;
+                       rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#exclusionary_norm
+:exclusionary_norm rdf:type owl:Class ;
+                   rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#experiment
+:experiment rdf:type owl:Class ;
+            rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#explainability
+:explainability rdf:type owl:Class ;
+                rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#extra-relating
+:extra-relating rdf:type owl:Class ;
+                rdfs:subClassOf :type_of_relation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#fairness
+:fairness rdf:type owl:Class ;
+          rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#farmer
+:farmer rdf:type owl:Class ;
+        rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#feminist_ethic
+:feminist_ethic rdf:type owl:Class ;
+                rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#financial_institutions
+:financial_institutions rdf:type owl:Class ;
+                        rdfs:subClassOf :economic_consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#focus_group
+:focus_group rdf:type owl:Class ;
+             rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#for_profit
+:for_profit rdf:type owl:Class ;
+            rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#freelancer
+:freelancer rdf:type owl:Class ;
+            rdfs:subClassOf :worker .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#funder
+:funder rdf:type owl:Class ;
+        rdfs:subClassOf :human .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#gender
+:gender rdf:type owl:Class ;
+        rdfs:subClassOf :material_semiotic_difference .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#gig-worker
+:gig-worker rdf:type owl:Class ;
+            rdfs:subClassOf :worker .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#global
+:global rdf:type owl:Class ;
+        rdfs:subClassOf :appropriate_scale .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#government_agency
+:government_agency rdf:type owl:Class ;
+                   rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#government_funding
+:government_funding rdf:type owl:Class ;
+                    rdfs:subClassOf :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#groups
+:groups rdf:type owl:Class ;
+        rdfs:subClassOf :equality_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#harmony
+:harmony rdf:type owl:Class ;
+         rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#hate_speech
+:hate_speech rdf:type owl:Class ;
+             rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#human
+:human rdf:type owl:Class ;
+       rdfs:subClassOf :actor .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#human_action
+:human_action rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#human_machine_relation
+:human_machine_relation rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#hype
+:hype rdf:type owl:Class ;
+      rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#hyped
+:hyped rdf:type owl:Class ;
+       rdfs:subClassOf :rhetoric .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#identified_harm_risk
+:identified_harm_risk rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#immigrant
+:immigrant rdf:type owl:Class ;
+           rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#in_on_or_out_of_the_decision-making_loop
+:in_on_or_out_of_the_decision-making_loop rdf:type owl:Class ;
+                                          rdfs:subClassOf :human_machine_relation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#inaccuracy
+:inaccuracy rdf:type owl:Class ;
+            rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#individual
+:individual rdf:type owl:Class ;
+            rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#individuals
+:individuals rdf:type owl:Class ;
+             rdfs:subClassOf :equality_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#industry_association
+:industry_association rdf:type owl:Class ;
+                      rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#inequality
+:inequality rdf:type owl:Class ;
+            rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#information_disorder
+:information_disorder rdf:type owl:Class ;
+                      rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#information_ethic
+:information_ethic rdf:type owl:Class ;
+                   rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#intelligence_as_emergent
+:intelligence_as_emergent rdf:type owl:Class ;
+                          rdfs:subClassOf :redefined_ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#intended
+:intended rdf:type owl:Class ;
+          rdfs:subClassOf :consequence ;
+          owl:disjointWith :unintended .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#inter-relating
+:inter-relating rdf:type owl:Class ;
+                rdfs:subClassOf :type_of_relation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#intergovernmental_organization
+:intergovernmental_organization rdf:type owl:Class ;
+                                rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#interpretation
+:interpretation rdf:type owl:Class ;
+                rdfs:subClassOf :multiple_dimension .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#interview
+:interview rdf:type owl:Class ;
+           rdfs:subClassOf :quantiative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#intra-relating
+:intra-relating rdf:type owl:Class ;
+                rdfs:subClassOf :type_of_relation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#justice
+:justice rdf:type owl:Class ;
+         rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#knowing-how
+:knowing-how rdf:type owl:Class ;
+             rdfs:subClassOf :ethico_political_care .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#knowing-what
+:knowing-what rdf:type owl:Class ;
+              rdfs:subClassOf :ethico_political_care .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#knowing-when
+:knowing-when rdf:type owl:Class ;
+              rdfs:subClassOf :ethico_political_care .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#legal_compliance
+:legal_compliance rdf:type owl:Class ;
+                  rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#lender
+:lender rdf:type owl:Class ;
+        rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#local
+:local rdf:type owl:Class ;
+       rdfs:subClassOf :appropriate_scale .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#manipulation
+:manipulation rdf:type owl:Class ;
+              rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#market_oriented
+:market_oriented rdf:type owl:Class ;
+                 rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#material_psychological_harm
+:material_psychological_harm rdf:type owl:Class ;
+                             rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#material_semiotic_difference
+:material_semiotic_difference rdf:type owl:Class ;
+                              rdfs:subClassOf :relational_ontology .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#mathematical_criteria
+:mathematical_criteria rdf:type owl:Class ;
+                       rdfs:subClassOf :non_relational_approach .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#matter_of_concern
+:matter_of_concern rdf:type owl:Class ;
+                   rdfs:subClassOf :type_of_mattering ;
+                   owl:disjointWith :matter_of_fact .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#matter_of_fact
+:matter_of_fact rdf:type owl:Class ;
+                rdfs:subClassOf :type_of_mattering .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#matter_of_interface
+:matter_of_interface rdf:type owl:Class ;
+                     rdfs:subClassOf :type_of_mattering .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#method
+:method rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#multi_stakeholder_engagement
+:multi_stakeholder_engagement rdf:type owl:Class ;
+                              rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#multiple_dimension
+:multiple_dimension rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#multiple_use
+:multiple_use rdf:type owl:Class ;
+              rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#national
+:national rdf:type owl:Class ;
+          rdfs:subClassOf :appropriate_scale .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#neighbourhood
+:neighbourhood rdf:type owl:Class ;
+               rdfs:subClassOf :appropriate_scale .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#new_risks
+:new_risks rdf:type owl:Class ;
+           rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#new_scale
+:new_scale rdf:type owl:Class ;
+           rdfs:subClassOf :appropriate_scale .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#ngo
+:ngo rdf:type owl:Class ;
+     rdfs:subClassOf :education_consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#non-personal_data
+:non-personal_data rdf:type owl:Class ;
+                   rdfs:subClassOf :type_of_data .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#non_discrimination
+:non_discrimination rdf:type owl:Class ;
+                    rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#non_human
+:non_human rdf:type owl:Class ;
+           rdfs:subClassOf :actor .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#non_human_autonomy
+:non_human_autonomy rdf:type owl:Class ;
+                    rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#non_relational_approach
+:non_relational_approach rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#nongovernmental_organization
+:nongovernmental_organization rdf:type owl:Class ;
+                              rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#nonprofit
+:nonprofit rdf:type owl:Class ;
+           rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#not_listed
+:not_listed rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#notice_and_consent
+:notice_and_consent rdf:type owl:Class ;
+                    rdfs:subClassOf :non_relational_approach .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#online_platform
+:online_platform rdf:type owl:Class ;
+                 rdfs:subClassOf :education_consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#other
+:other rdf:type owl:Class ;
+       rdfs:subClassOf :appropriate_scale .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#parent
+:parent rdf:type owl:Class ;
+        rdfs:subClassOf :education_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#participatory_design
+:participatory_design rdf:type owl:Class ;
+                      rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#paternalist
+:paternalist rdf:type owl:Class ;
+             rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#permanent
+:permanent rdf:type owl:Class ;
+           rdfs:subClassOf :worker .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#personal_data
+:personal_data rdf:type owl:Class ;
+               rdfs:subClassOf :type_of_data .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#philanthropic_funding
+:philanthropic_funding rdf:type owl:Class ;
+                       rdfs:subClassOf :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#polarisation_and_radicalization
+:polarisation_and_radicalization rdf:type owl:Class ;
+                                 rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#policy_maker
+:policy_maker rdf:type owl:Class ;
+              rdfs:subClassOf :education_consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#postcolonial_ethic
+:postcolonial_ethic rdf:type owl:Class ;
+                    rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#proactive
+:proactive rdf:type owl:Class ;
+           rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#prospective_transparency
+:prospective_transparency rdf:type owl:Class ;
+                          rdfs:subClassOf :transparency ;
+                          owl:disjointWith :retrospective_tranparency .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#qualitative
+:qualitative rdf:type owl:Class ;
+             rdfs:subClassOf :method ;
+             owl:disjointWith :quantiative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#quantiative
+:quantiative rdf:type owl:Class ;
+             rdfs:subClassOf :method .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#question
+:question rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#race
+:race rdf:type owl:Class ;
+      rdfs:subClassOf :material_semiotic_difference .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#reactive
+:reactive rdf:type owl:Class ;
+          rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#redefined_ethical_parameter
+:redefined_ethical_parameter rdf:type owl:Class ;
+                             rdfs:subClassOf :relational_approach .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#reduced_accessbility
+:reduced_accessbility rdf:type owl:Class ;
+                      rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#relational_approach
+:relational_approach rdf:type owl:Class ;
+                     rdfs:subClassOf :relationality .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#relational_ethic
+:relational_ethic rdf:type owl:Class ;
+                  rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#relational_ontology
+:relational_ontology rdf:type owl:Class ;
+                     rdfs:subClassOf :relational_approach .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#relationality
+:relationality rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#relevance
+:relevance rdf:type owl:Class ;
+           rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#research_institute
+:research_institute rdf:type owl:Class ;
+                    rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#researcher
+:researcher rdf:type owl:Class ;
+            rdfs:subClassOf :education_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#respects_privacy
+:respects_privacy rdf:type owl:Class ;
+                  rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#responsibility
+:responsibility rdf:type owl:Class ;
+                rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#responsiblity_as_responseability
+:responsiblity_as_responseability rdf:type owl:Class ;
+                                  rdfs:subClassOf :redefined_ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#retrospective_tranparency
+:retrospective_tranparency rdf:type owl:Class ;
+                           rdfs:subClassOf :transparency .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#rhetoric
+:rhetoric rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#safety_and_security
+:safety_and_security rdf:type owl:Class ;
+                     rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#scalar
+:scalar rdf:type owl:Class ;
+        rdfs:subClassOf :multiple_dimension .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#school
+:school rdf:type owl:Class ;
+        rdfs:subClassOf :education_consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#self-funding
+:self-funding rdf:type owl:Class ;
+              rdfs:subClassOf :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#self_employed
+:self_employed rdf:type owl:Class ;
+               rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#sensitive_data
+:sensitive_data rdf:type owl:Class ;
+                rdfs:subClassOf :type_of_data .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#shared_fairness
+:shared_fairness rdf:type owl:Class ;
+                 rdfs:subClassOf :redefined_ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#small_medium_enterprise
+:small_medium_enterprise rdf:type owl:Class ;
+                         rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#social_good
+:social_good rdf:type owl:Class ;
+             rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#social_impact_assesment
+:social_impact_assesment rdf:type owl:Class ;
+                         rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#social_isolation
+:social_isolation rdf:type owl:Class ;
+                  rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#social_workers
+:social_workers rdf:type owl:Class ;
+                rdfs:subClassOf :equality_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#socio_technical_system
+:socio_technical_system rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#solutionist
+:solutionist rdf:type owl:Class ;
+             rdfs:subClassOf :rhetoric .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#solve_social_problem
+:solve_social_problem rdf:type owl:Class ;
+                      rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#spatial
+:spatial rdf:type owl:Class ;
+         rdfs:subClassOf :multiple_dimension .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#speculative_design
+:speculative_design rdf:type owl:Class ;
+                    rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#speculative_ethic
+:speculative_ethic rdf:type owl:Class ;
+                   rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#startup
+:startup rdf:type owl:Class ;
+         rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#stock_trader
+:stock_trader rdf:type owl:Class ;
+              rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#structurally_disadvantaged
+:structurally_disadvantaged rdf:type owl:Class ;
+                            rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#student_and_learner
+:student_and_learner rdf:type owl:Class ;
+                     rdfs:subClassOf :education_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#surveillance
+:surveillance rdf:type owl:Class ;
+              rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#survey
+:survey rdf:type owl:Class ;
+        rdfs:subClassOf :quantiative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#teacher_and_educator
+:teacher_and_educator rdf:type owl:Class ;
+                      rdfs:subClassOf :education_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#tech-centric
+:tech-centric rdf:type owl:Class ;
+              rdfs:subClassOf :design_motive .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#techno-human_ecology
+:techno-human_ecology rdf:type owl:Class ;
+                      rdfs:subClassOf :deep_ecology .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#technology
+:technology rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#technology_company
+:technology_company rdf:type owl:Class ;
+                    rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#temporal
+:temporal rdf:type owl:Class ;
+          rdfs:subClassOf :multiple_dimension .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#temporary
+:temporary rdf:type owl:Class ;
+           rdfs:subClassOf :worker .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#think_tank
+:think_tank rdf:type owl:Class ;
+            rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#threat_to_privacy
+:threat_to_privacy rdf:type owl:Class ;
+                   rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#threat_to_safety
+:threat_to_safety rdf:type owl:Class ;
+                  rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#town
+:town rdf:type owl:Class ;
+      rdfs:subClassOf :appropriate_scale .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#training_institute
+:training_institute rdf:type owl:Class ;
+                    rdfs:subClassOf :education_consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#trans-relating
+:trans-relating rdf:type owl:Class ;
+                rdfs:subClassOf :type_of_relation .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#transparency
+:transparency rdf:type owl:Class ;
+              rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#transparency_as_performativity
+:transparency_as_performativity rdf:type owl:Class ;
+                                rdfs:subClassOf :redefined_ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#transparency_as_verifiability
+:transparency_as_verifiability rdf:type owl:Class ;
+                               rdfs:subClassOf :non_relational_approach .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#trust
+:trust rdf:type owl:Class ;
+       rdfs:subClassOf :ethical_parameter .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#type_of_data
+:type_of_data rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#type_of_funding
+:type_of_funding rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#type_of_mattering
+:type_of_mattering rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#type_of_organization
+:type_of_organization rdf:type owl:Class .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#type_of_relation
+:type_of_relation rdf:type owl:Class ;
+                  rdfs:subClassOf :relationality .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#unaccountability
+:unaccountability rdf:type owl:Class ;
+                  rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#unemployed
+:unemployed rdf:type owl:Class ;
+            rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#unemployment
+:unemployment rdf:type owl:Class ;
+              rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#unfair
+:unfair rdf:type owl:Class ;
+        rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#unintended
+:unintended rdf:type owl:Class ;
+            rdfs:subClassOf :consequence .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#union
+:union rdf:type owl:Class ;
+       rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#university_and_college
+:university_and_college rdf:type owl:Class ;
+                        rdfs:subClassOf :education_consumer .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#use
+:use rdf:type owl:Class ;
+     rdfs:subClassOf :multiple_dimension .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#user
+:user rdf:type owl:Class ;
+      rdfs:subClassOf :human .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#utilitarianism
+:utilitarianism rdf:type owl:Class ;
+                rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#value
+:value rdf:type owl:Class ;
+       rdfs:subClassOf :multiple_dimension .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#value-sensitive_design
+:value-sensitive_design rdf:type owl:Class ;
+                        rdfs:subClassOf :qualitative .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#venture_capital_firm
+:venture_capital_firm rdf:type owl:Class ;
+                      rdfs:subClassOf :type_of_organization .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#venture_capital_funding
+:venture_capital_funding rdf:type owl:Class ;
+                         rdfs:subClassOf :type_of_funding .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#virtue_ethic
+:virtue_ethic rdf:type owl:Class ;
+              rdfs:subClassOf :ethical_framework .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#weakening_of_democracy
+:weakening_of_democracy rdf:type owl:Class ;
+                        rdfs:subClassOf :identified_harm_risk .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#worker
+:worker rdf:type owl:Class ;
+        rdfs:subClassOf :economic_end_user .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#for_whom?
+<http://www.ontology.audit4sg.org/RelAIEO#for_whom?> rdf:type owl:Class ;
+                                                     rdfs:subClassOf :question .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#how_to_care?
+<http://www.ontology.audit4sg.org/RelAIEO#how_to_care?> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :question .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#what_for?
+<http://www.ontology.audit4sg.org/RelAIEO#what_for?> rdf:type owl:Class ;
+                                                     rdfs:subClassOf :question .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#who_cares?
+<http://www.ontology.audit4sg.org/RelAIEO#who_cares?> rdf:type owl:Class ;
+                                                      rdfs:subClassOf :question .
+
+
+###  http://www.ontology.audit4sg.org/RelAIEO#why_to_care?
+<http://www.ontology.audit4sg.org/RelAIEO#why_to_care?> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :question .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :academic_funding
+                :angel_funding
+                :community_driven
+                :corporate_funding
+                :crowdfunding
+                :government_funding
+                :philanthropic_funding
+                :self-funding
+                :venture_capital_funding
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :academic_institution
+                :collective
+                :for_profit
+                :government_agency
+                :industry_association
+                :intergovernmental_organization
+                :nongovernmental_organization
+                :nonprofit
+                :startup
+                :technology_company
+                :think_tank
+                :union
+                :venture_capital_firm
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :achieve_sdg_goals
+                :data_justice
+                :disruptive
+                :market_oriented
+                :paternalist
+                :proactive
+                :reactive
+                :social_good
+                :solve_social_problem
+                :tech-centric
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :action_research
+                :case_study
+                :co-design
+                :critical_discourse_analysis
+                :critical_incident_analysis
+                :deliberative_forums
+                :ethnographic_research
+                :focus_group
+                :multi_stakeholder_engagement
+                :participatory_design
+                :social_impact_assesment
+                :speculative_design
+                :value-sensitive_design
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :assumption
+                :deployment
+                :interpretation
+                :scalar
+                :spatial
+                :temporal
+                :use
+                :value
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :autonomous_self
+                :mathematical_criteria
+                :notice_and_consent
+                :transparency_as_verifiability
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :borrower
+                :customer
+                :employee
+                :farmer
+                :immigrant
+                :lender
+                :self_employed
+                :small_medium_enterprise
+                :stock_trader
+                :structurally_disadvantaged
+                :unemployed
+                :worker
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :city
+                :district
+                :global
+                :local
+                :national
+                :neighbourhood
+                :other
+                :town
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :co-relating
+                :extra-relating
+                :inter-relating
+                :intra-relating
+                :trans-relating
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :communities
+                :education_end_user
+                :groups
+                :individuals
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :developer
+                :funder
+                :user
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ethic_dumping
+                :ethic_lobbying
+                :ethic_shirking
+                :ethic_shopping
+                :ethic_washing
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ethico_political_care
+                :intelligence_as_emergent
+                :transparency_as_performativity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :freelancer
+                :gig-worker
+                :permanent
+                :temporary
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :knowing-how
+                :knowing-what
+                :knowing-when
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :non-personal_data
+                :personal_data
+                :sensitive_data
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.ontology.audit4sg.org/RelAIEO#for_whom?>
+                <http://www.ontology.audit4sg.org/RelAIEO#how_to_care?>
+                <http://www.ontology.audit4sg.org/RelAIEO#what_for?>
+                <http://www.ontology.audit4sg.org/RelAIEO#who_cares?>
+                <http://www.ontology.audit4sg.org/RelAIEO#why_to_care?>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
